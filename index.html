@@ -3,24 +3,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    
 </head>
 <body>
-    
+
+    <!-- day night theme buttons -->
+    <!-- <div class="theme-box">
+        <i class="fa-solid fa-sun" id="theme"></i>
+        <i class="fa-solid fa-moon"></i>
+    </div> -->
+
+
+
+    <!-- header section starts -->
+
+    <header id="header-sec">
+        <div class="user">
+            <img src="Images/self.jpg" alt="">
+            <h3 class="name">Sadaf Shaikh</h3>
+            <p class="post">Front end developer</p>
+        </div>
+
+        <nav class="navbar">
+            <ul type="none">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="follow">
+            <a target="_blank" href="https://www.linkedin.com/in/sadaf-shaikh-4239bb245/" class=""><i class="fa-brands fa-linkedin fa-lg"></i></a>
+            <a target="_blank" href="https://github.com/SadafShaikh06"><i class="fa-brands fa-square-github fa-lg"></i></a>
+        </div>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <div id="menu-icon" onclick="openHeader()">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <!-- home section starts -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <span class="hey">hey there...</span>
+            <h3>i am <span>sadaf shaikh</span> </h3>
+            <p class="info">
+                i am an enthusiastic and highly motivated front-end developer with a solid background in html, css, javascript.
+            </p>
+            <p class="text">
+                my expertise lies in crafting user-friendly and visually captivating web interfaces that enhance the overall user experience.
+            </p>
+            <a href="#about" class="btn">about me</a>
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- about section starts -->
+
+    <section class="about" id="about">
+
+        <h1 class="heading">about <span> me </span> </h1>
+
+        <div class="row-1">
+            <div class="content">
+                <h3>Welcome to my portfolio! I'm Sadaf Shaikh, a dedicated and passionate web developer with a strong programming background.</h3>
+                <p>
+                    What truly captivates me is the art of creating captivating and functional web experiences. I love bringing ideas to life through clean, elegant code and creating user-friendly interfaces that provide seamless interactions. 
+                    My experience with various front-end frameworks, such as React and Bootstrap, has enabled me to develop dynamic and responsive websites that deliver exceptional user experiences across different devices.
+                    Beyond coding, I am a dedicated learner and constantly strive to stay updated with the latest trends and best practices in web development.
+                    My goal is to continue expanding my skill set, taking on exciting projects, and contributing to the ever-evolving world of web development.
+                    I'm open to new opportunities, so if you're interested in working together or hiring me or have any questions, please don't hesitate to reach out.
+                </p>
+
+                <div class="box-container">
+                    <div class="box">
+                        <p><span>DOB: </span>06/01/2000</p>
+                        <p><span>Gender: </span> Female</p>
+                        <p> <span>language: </span>english, hindi, marathi</p>
+                    </div>
+                    <div class=""><a class="btn" href="../../../Downloads/ResumeCS.pdf" target="_blank">Download CV</a></div>
+                </div>
+            </div>
+
+            
+
+        </div>
+
+        <h1 class="heading">my <span> skills</span></h1>            
+
+        <div class="row-2">
+            
+            <i id="left" class="fa-solid fa-angle-left"></i>
+
+            <div class="skills">
+                <div class="cards">
+                    <h3>HTML</h3>
+                    <img src="Images/html.png" alt="">
+                    <h5><span>Level: </span> Advance</h5>
+                </div>
+
+                <div class="cards">
+                    <h3>CSS/SCSS</h3>
+                    <img src="Images/css.png" alt="">
+                    <h5><span>Level: </span> Advance</h5>
+                </div>
+
+                <div class="cards">
+                    <h3>Javascript</h3>
+                    <img src="Images/javascript.png" alt="">
+                    <h5><span>Level: </span> intermediate</h5>
+                </div>
+
+                <div class="cards">
+                    <h3>Bootstrap</h3>
+                    <img src="Images/bootstrap.png" alt="">
+                    <h5><span>Level: </span> Advance</h5>
+                </div>
+
+                <div class="cards">
+                    <h3>reactJs</h3>
+                    <img src="Images/react.png" alt="">
+                    <h5><span>Level: </span> intermediate</h5>
+                </div>
+
+                <div class="cards">
+                    <h3>github</h3>
+                    <img src="Images/github.png" alt="">
+                    <h5><span>Level: </span> intermediate</h5>
+                </div>
+
+                <div class="cards">
+                    <h3>MySQL</h3>
+                    <img src="Images/mysql.png" alt="">
+                    <h5><span>Level: </span> intermediate</h5>
+                </div>
+            </div>
+
+            <i id="right" class="fa-solid fa-angle-right"></i>
+        </div>
+
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- education section starts -->
+
+    <section class="education" id="education">
+
+        <h1 class="heading"> my <span>education</span></h1>
+
+        <div class="box-container">
+
+            <div class="content">
+                <h3>graduation</h3>
+                <h4>Bachelor's in Computer applications</h4>
+                <h4><span>cgpa:</span> 8.2</h4>
+                <h4><span>year:</span> 2019-2022</h4>
+                <h4>patkar varde college</h4>
+            </div>
+
+            <div class="content">
+                <h3>Higher Secondary</h3>
+                <h4>Science</h4>
+                <h4><span>percentage:</span> 61</h4>
+                <h4><span>year:</span> 2015-2017</h4>
+                <h4>S.V.P Jubior college of commerce and science</h4>
+            </div>
+
+            <div class="content">
+                <h3>secondary</h3>
+                <h4><span>percentage:</span> 89</h4>
+                <h4><span>year:</span> 2015</h4>
+                <h4>N. H. English Academy</h4>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- education section ends -->
+
+    <!-- projects section starts  -->
+
+    <section class="projects" id="projects">
+        <h1 class="heading"><span>Projects</span></h1>
+
+        <div class="projects-container">
+
+            <div class="projects-card">
+                <h3>To Do List using ReactJs :</h3>
+                <a target="_blank" href="https://sadafshaikh06.github.io/ToDoList-react/">
+                    <img src="Images/todo.jpg" alt="">
+                </a>
+            </div>
+
+            <div class="projects-card">
+                <h3>Bootstrap Project :</h3>
+                <a target="_blank" href="https://sadafshaikh06.github.io/Bootstrap.github.io/">
+                    <img src="Images/bootstrap1.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects section ends -->
+
+    <!-- contact section starts -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"><span>contact</span> me</h1>
+
+        <div class="icons-container">
+            <div class="icons">
+                <i class="fa-solid fa-envelope"></i>
+                <h3>email-Id</h3>
+                <p>sadaf8342@gmail.com</p>
+            </div>
+
+            <div class="icons">
+                <i class="fa-solid fa-phone"></i>
+                <h3>mobile no.</h3>
+                <p>8879425380</p>
+            </div>
+
+            <div class="icons">
+                <i class="fa-solid fa-location-dot"></i>
+                <h3>address</h3>
+                <p>Navi Mumbai</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <form action="">
+                <input type="text" class="box blankText" placeholder="name" id="clearText">
+                <input type="email" class="box blankText" placeholder="email address" id="inp2" >
+                <input type="number" class="box blankText" placeholder="mobile number" id="inp3">
+                <br>
+                <textarea name="" class="blankText" placeholder="message" cols="30" rows="10" id="inp4"></textarea>
+                <input type="submit" value="send message" class="btn1" onclick="clearAll()">
+            
+            </form>
+
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60335.64906147358!2d73.05961265000002!3d19.064701950000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c21a53e30b83%3A0xa766b29f687709d7!2sKharghar%2C%20Navi%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1688739837887!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </section>
+
+    <!-- contact section ends -->
+
+<script src="https://kit.fontawesome.com/a89266906b.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
 </body>
 </html>
-
-
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta viewport="width=device-width, initial-scale=1.0">
-
-</head>
-<body>
-    
-</body>
-</html> -->
